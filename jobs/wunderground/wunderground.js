@@ -24,7 +24,6 @@ module.exports = {
   
   onRun: function (config, dependencies, jobCallback) {
 
-    var logger = dependencies.logger;
 
     if (!config.globalAuth || !config.globalAuth.wunderground.wundergroundapikey) {
       return jobCallback('Missing wunderground API key - see https://www.wunderground.com/weather/api/');
@@ -40,8 +39,6 @@ module.exports = {
     var key = String(config.globalAuth.wunderground.wundergroundapikey);
 
     const callURL = 'http://api.wunderground.com/api/' + key + "/forecast" + location;
-    
-    console.log(callURL);
 
     dependencies.easyRequest.JSON(callURL,
       function (err, hourlyRes) {
