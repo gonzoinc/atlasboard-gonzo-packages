@@ -34,3 +34,28 @@ Job: wunderground
        "wundergroundapikey" : "API KEY GOES HERE"
        }
 ```
+
+### Stock Ticker
+Displays an individual stock symbol ticker with current and high/low [alphavantage.co](https://www.alphavantage.co/)
+
+![](screenshots/stockticket_widget.png?raw=true)
+
+
+Job: stocks
+
+####Expected configuration:
+```JSON
+      "stocks" :   {
+        "widgetTitle" : "Stock Price",
+        "interval" : 60000,
+        "symbol" : "GOOGL"
+      }
+```
+ 
+####API key in global auth
+  
+```JSON 
+    "stocks": {
+        "stocksApiKey" : "API KEY GOES HERE"
+        }
+```

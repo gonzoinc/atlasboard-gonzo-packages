@@ -1,0 +1,54 @@
+.content {
+    text-align: center;
+    color: #b3b3b3;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.content table{
+    width: 100%;
+}
+    
+.content table tr td {
+    width: 25%;  
+}
+
+.stockTable{
+    border: gray 1px solid;
+    text-align: center;
+    margin-right: 17px;
+    width: 100%;
+    vertical-align:top;
+}
+    
+.stockTable tr td { 
+      
+}
+.topText {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+    color: red;
+    line-height: 34px; 
+}
+        
+.centerText{
+    text-align: center;
+    font-size: 3.15vw;
+    margin:0 0 0 0;
+    padding:0;
+    line-height: 80px; 
+}
+
+.centerText table{
+    text-align: center;
+}
+.bottomText{
+    text-align: center;
+    font-size: 1vw;
+    font-weight: bold;
+    white-space:nowrap;
+    padding-top:5px;
+    line-height: 30px; 
+}
+    
+    

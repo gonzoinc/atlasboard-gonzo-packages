@@ -1,0 +1,23 @@
+{
+
+  "title": "Stocks",
+  "titleVisible": true,
+
+  "description": "Stock Ticker",
+
+  "layout": {
+      "gridSize" : { "columns" : 30, "rows" : 12 },
+      "customJS" : [],
+      "widgets" : [
+        {"row" : 1, "col" : 1, "width" : 4, "height" : 3, "widget" : "stocks", "job" : "stocks", "config": "stocks"}
+      ]
+  },
+
+  "config": {
+      "stocks" :   {
+        "widgetTitle" : "Stock Price",
+        "interval" : 60000,
+        "symbol" : "GOOGL"
+      }
+  }
+}
