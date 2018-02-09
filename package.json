@@ -1,0 +1,25 @@
+{
+  "author": "gonzoinc",
+  "name": "atlasboard-gonzo-packages",
+  "description": "Gonzo package for Atlasboard",
+  "version": "1.0",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "cron": "1.1.1",
+    "cheerio": "0.22.0",
+    "memory-cache": "0.1.6"
+  },
+  "engines": {
+    "atlasboard": ">=1.1.0"
+  },
+  "contributors": [
+    {
+      "name": "Greg Dean",
+      "email": "greg.dean@gonzoinc.com"
+    }
+  ]
+}

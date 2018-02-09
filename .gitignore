@@ -1,0 +1,7 @@
+.DS_Store
+.profile
+node_modules
+.swp
+.iml
+.idea
+.log

@@ -1,0 +1,23 @@
+{
+
+  "title": "Weather",
+  "titleVisible": true,
+
+  "description": "Weather for 90210",
+
+  "layout": {
+      "gridSize" : { "columns" : 30, "rows" : 12 },
+      "customJS" : [],
+      "widgets" : [
+        {"row" : 1, "col" : 1, "width" : 30, "height" : 3, "widget" : "wunderground", "job" : "wunderground", "config": "wunderground"}
+      ]
+  },
+
+  "config": {
+      "wunderground" :   {
+        "widgetTitle" : "Local Weather",
+        "interval" : 900000,
+        "zipCode" : "90210"
+      }
+  }
+}
