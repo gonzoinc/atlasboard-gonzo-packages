@@ -27,12 +27,18 @@ widget = {
         mm = mm < 10 ? "0"+mm : mm.toString();
         var yyyy = today.getFullYear();
         yyyy = yyyy.toString();
-        var today = yyyy+ '-' + mm+ '-' + dd;
-       
+        var today = yyyy+ '-' + mm+ '-' + dd; 
+        
+        //if the market is closed and we don't have todays values set, use the last refreshed date instead.
+        if(data.content["Time Series (Daily)"][today] == undefined){
+            today = data.content["Meta Data"]["3. Last Refreshed"];
+        }
+        
         //Build out the high and low prices
         var lowPrice = parseFloat(data.content["Time Series (Daily)"][today]["3. low"]).toFixed(2);
         var highPrice = parseFloat(data.content["Time Series (Daily)"][today]["2. high"]).toFixed(2);
         var lowHigh = "Low: " + lowPrice  + "</br>High: " + highPrice;
+        
         
         // create table cells:
         var itemTd = $('<td></td>').appendTo(tr);
