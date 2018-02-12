@@ -59,3 +59,18 @@ Job: stocks
         "stocksApiKey" : "API KEY GOES HERE"
         }
 ```
+
+
+### Comic Display
+Displays comics from gocomics
+
+
+Job: geocomic
+
+####Expected configuration:
+```JSON
+      "bloom" : {
+        "interval" : 60000,
+        "comic"    : "bloomcounty"
+      }
+```
