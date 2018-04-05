@@ -1,0 +1,22 @@
+{
+
+  "title": "Comics",
+  "titleVisible": true,
+
+  "description": "GoComics",
+
+  "layout": {
+      "gridSize" : { "columns" : 30, "rows" : 12 },
+      "customJS" : [],
+      "widgets" : [
+        {"row" : 1, "col" : 1, "width" : 14, "height" : 7, "widget" : "gocomics", "job" : "gocomics", "config": "gocomics"}
+      ]
+  },
+
+  "config": {
+      "gocomics" :   {
+            "interval" : 60000,
+            "comic"    : "calvinandhobbes"
+      }
+  }
+}
