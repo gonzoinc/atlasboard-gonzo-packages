@@ -61,15 +61,20 @@ Job: stocks
 ```
 
 
-### Comic Display
-Displays comics from gocomics
+### Go Comic Display
+Displays comics from gocomics. You can confgure this to show any of the comics listed here - http://www.gocomics.com/comics/a-to-z
+Find the comics you wish to display form the above url, go into the comic itself and grab the comic name from the URL, EX: http://www.gocomics.com/bloomcounty
+Enter the name exactly as shown in the URL into the config. The job runs and scrapes the comic page looking for the direct image url of the comic itself and returns that URL to the widget. 
+Be aware that some comics image format changes from a banner image to a square. The widget does not compensate for those various image sizes but it will not allow the image to breakout of it's container. It will just show smaller.
+When the job runs it pulls a new random image from within the curent month.
 
+![](screenshots/gocomics_widget.png?raw=true)
 
 Job: geocomic
 
 ####Expected configuration:
 ```JSON
-      "bloom" : {
+      "gocomics" : {
         "interval" : 60000,
         "comic"    : "bloomcounty"
       }

@@ -1,0 +1,11 @@
+.content {
+    text-align: center;
+}
+
+.content img {
+    height:295px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: -10px;
+}
